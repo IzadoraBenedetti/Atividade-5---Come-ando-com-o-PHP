@@ -9,7 +9,7 @@
 
 <body>
     <h1>Calcular a Área do Triângulo</h1>
-    <form method="POST" action="calcular">
+    <form method="POST" action="index.php">
         <div>
             <label for="base">Base do triângulo:</label>
             <input type="number" id="base" name="base" required><br><br>
@@ -27,7 +27,7 @@
         $base = $_POST['base'];
         $altura = $_POST['altura'];
         $area = ($base * $altura) / 2;
-        $limite = 100; // Definindo o valor de $limite
+        $limite = 100; 
         if ($area > $limite) {
             echo "<h1>A área do triângulo é $area, que é maior que $limite.</h1>";
         } else {
